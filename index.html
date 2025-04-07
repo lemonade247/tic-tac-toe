@@ -9,8 +9,29 @@
 <body>
     <div class="container">
         <h1>Tic Tac Toe</h1>
-        <div class="status" id="status">Player X's turn</div>
-        <div class="game-board" id="board">
+        <div class="player-setup" id="playerSetup">
+            <div class="input-group">
+                <label for="player1Name">Player 1 (X):</label>
+                <input type="text" id="player1Name" placeholder="Enter Player 1 name">
+            </div>
+            <div class="input-group">
+                <label for="player2Name">Player 2 (O):</label>
+                <input type="text" id="player2Name" placeholder="Enter Player 2 name">
+            </div>
+            <button id="startGame">Start Game</button>
+        </div>
+        <div class="game-info" id="gameInfo" style="display: none;">
+            <div class="player player1">
+                <span class="player-name" id="player1Display">Player 1</span>
+                <span class="player-score" id="player1Score">0</span>
+            </div>
+            <div class="turn-indicator" id="turnIndicator">Player 1's Turn</div>
+            <div class="player player2">
+                <span class="player-name" id="player2Display">Player 2</span>
+                <span class="player-score" id="player2Score">0</span>
+            </div>
+        </div>
+        <div class="game-board" id="board" style="display: none;">
             <div class="cell" data-cell></div>
             <div class="cell" data-cell></div>
             <div class="cell" data-cell></div>
@@ -21,16 +42,17 @@
             <div class="cell" data-cell></div>
             <div class="cell" data-cell></div>
         </div>
-        <button id="restartButton">Restart Game</button>
+        <button id="restartButton" style="display: none;">New Game</button>
     </div>
 
-    <div class="overlay" id="overlay"></div>
     <div class="winning-banner" id="winningBanner">
         <h2>🎉 Congratulations! 🎉</h2>
-        <p id="winnerMessage">Player X wins!</p>
+        <p id="winnerMessage"></p>
         <button id="playAgainButton">Play Again</button>
     </div>
+    <div class="overlay" id="overlay"></div>
 
+    <audio id="winSound" src="https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3"></audio>
     <script src="script.js"></script>
 </body>
 </html> 

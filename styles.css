@@ -142,4 +142,98 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
     display: none;
+}
+
+.player-setup {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+#startGame {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+#startGame:hover {
+    background-color: #45a049;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    min-width: 120px;
+}
+
+.player1 {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.player2 {
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+.player-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.player-score {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.turn-indicator {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
 } 
