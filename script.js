@@ -143,4 +143,3 @@ player2NameInput.addEventListener('keypress', (e) => {
         startGame();
     }
 }); 
-playAgainButton.addEventListener('click', restartGame); 
